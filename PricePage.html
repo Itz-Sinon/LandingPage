@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AboutPage.css" />
+    <link rel="stylesheet" href="Animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+    </style>
+    <title>What's up</title>
+  </head>
+  <body class="montserrat">
+    <div id="NavBar">
+      <div id="Logo">
+        <img src="/public/assets/avatars/Logo2.png" />
+      </div>
+      <a href="javascript:void(0);" id="MenuBtn" onclick="Menu()">
+        <img src="./public/assets/icons/Black_Menu_Icon.svg" alt="Menu" />
+      </a>
+      <div id="Links">
+        <a href="HomePage.html">Home</a>
+        <a href="AboutPage.html">About</a>
+        <a href="PricePage.html">Pricing</a>
+        <a href="ContactPage.html">Contact</a>
+      </div>
+    </div>
+    <div id="To_Top">
+      <a href="#">
+        <img src="/public/assets/icons/ArrowUp.svg" />
+      </a>
+    </div>
+    <div id="Page8">
+      <div id="Page8-Img" class="hiddenUp">
+        <img src="./public/assets/images/Img_Page8.png" alt="" />
+      </div>
+      <div id="Page8-Content" class="hiddenRight">
+        <h2 class="Title-Box">LET'S CONNECT</h2>
+        <h1>We're here to help</h1>
+        <input
+          type="text"
+          name="InputName"
+          id="InputName"
+          placeholder="Enter your Name"
+          size="15"
+          maxlength="50"
+          class="montserrat"
+        />
+        <input
+          type="email"
+          name="InputEmail"
+          id="InputEmail"
+          placeholder="Enter a valid email address"
+          size="15"
+          class="montserrat"
+        />
+        <textarea
+          name="message"
+          id="InputMes"
+          placeholder="Enter your message"
+          class="montserrat"
+          maxlength="50"
+        ></textarea>
+        <input
+          type="submit"
+          name="Submit2"
+          id="Submit2"
+          class="montserrat"
+          value="SUBMIT"
+        />
+      </div>
+    </div>
+    <div id="Footer">
+      <p>Make by Sinon</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
