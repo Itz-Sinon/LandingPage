@@ -356,7 +356,7 @@ img {
   grid-template: 250px 1fr/ 50% 50%;
   background-color: #1f4947;
   color: white;
-  height: 800px;
+  height: 900px;
 }
 #Page7-Content-Left {
   grid-area: 1/1/2/2;
@@ -832,5 +832,18 @@ textarea:focus {
   #InputMes {
     max-width: 90%;
     max-height: 100px;
+  }
+
+  #Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+  }
+  #Footer-NameCompany,
+  #Footer-Contact,
+  #Footer-Social {
+    width: 70%;
   }
 }
