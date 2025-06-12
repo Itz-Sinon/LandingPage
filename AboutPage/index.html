@@ -1,15 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../Animation.css">
-    <title>Document</title>
-</head>
-<body>
-    <a href="/LandingPage/index.html">Click</a>
-    <p class="hiddenUp">hioahoahof</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Animation.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap");
+    </style>
+    <title>Wazzup</title>
+  </head>
+  <body class="montserrat">
+    <div id="NavBar">
+      <a href="#" id="Logo">
+        <div id="Logo-Content">
+          <img src="../public/assets/avatars/Logo2.png" />
+          <div id="Logo-Name">
+            <span>Sloth</span>
+            <span>Website</span>
+          </div>
+        </div>
+      </a>
+      <a href="javascript:void(0);" id="MenuBtn" onclick="Menu()">
+        <img src="../public/assets/icons/Black_Menu_Icon.svg" alt="Menu" />
+      </a>
+      <div id="Links">
+        <a href="../index.html">Home</a>
+        <a href="../AboutPage/index.html">About</a>
+        <a href="../PricePage/index.html">Pricing</a>
+        <a href="../ContactPage/index.html">Contact</a>
+      </div>
+    </div>
+    <div id="To_Top">
+      <a href="#">
+        <img src="../public/assets/icons/ArrowUp.svg" />
+      </a>
+    </div>
+    <div id="Page1">
+      <div id="Page1-Content">
+        <h2>ABOUT US</h2>
+        <h1>Operational Efficiency Solutions</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum.
+        </p>
+      </div>
+    </div>
+    <div id="Page2">
+      <div id="Page2-Box">
+        <div id="Page2-Box-Content">
+          <h2 class="Title-Box">Our Work</h2>
+          <h1>Business Strategy Consulting</h1>
+          <p>
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+            dolor sit amet.
+          </p>
+          <div id="Page2-Box-Content-BtnPlace">
+            <div id="Page2-Box-Content-Btn">
+              <a href="#Page2-Box-Content-Btn" class="Active-Btn">MISSION</a>
+              <a href="#Page2-Box-Content-Btn">VISION</a>
+              <a href="#Page2-Box-Content-Btn">PLANS</a>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum
+            </p>
+          </div>
+        </div>
+        <div id="Page2-Box-Img">
+          <img src="../public/assets/images/About_Page2_Img.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="Page3">
+      <div id="Page3-Content-Up">
+        <h2 class="Title-Box">SERVICES</h2>
+        <h1>Insights for Smarter Decisions</h1>
+      </div>
+      <div id="Page3-Content-Down-Analysis">
+        <div class="Box-Img">
+          <img src="../public/assets/icons/Bulb_Black_Icon.svg" />
+        </div>
+        <h2>ANALYST</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+      <div id="Page3-Content-Down-Strategy">
+        <div class="Box-Img">
+          <img src="../public/assets/icons/Note_Black_Icon.svg" />
+        </div>
+        <h2>STRATEGY</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+      <div id="Page3-Content-Down-Optimization">
+        <div class="Box-Img">
+          <img src="../public/assets/icons/Setting_Black_Icon.svg" />
+        </div>
+        <h2>OPTIMIZATION</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+      <div id="Page3-Content-Down-Training">
+        <div class="Box-Img">
+          <img src="../public/assets/icons/Group_Black_Icon.svg" />
+        </div>
+        <h2>TRANING</h2>
+        <p>Sample text. Click to select the Text Element.</p>
+      </div>
+    </div>
+    <div id="Page4">
+      <div id="Page4-Img" class="hiddenUp">
+        <img src="../public/assets/images/Img_Page8.png" alt="" />
+      </div>
+      <div id="Page4-Content" class="hiddenRight">
+        <h2 class="Title-Box">LET'S CONNECT</h2>
+        <h1>We're here to help</h1>
+        <input
+          type="text"
+          name="InputName"
+          id="InputName"
+          placeholder="Enter your Name"
+          size="15"
+          maxlength="50"
+          class="montserrat"
+        />
+        <input
+          type="email"
+          name="InputEmail"
+          id="InputEmail"
+          placeholder="Enter a valid email address"
+          size="15"
+          class="montserrat"
+        />
+        <textarea
+          name="message"
+          id="InputMes"
+          placeholder="Enter your message"
+          class="montserrat"
+          maxlength="50"
+        ></textarea>
+        <input
+          type="submit"
+          name="Submit2"
+          id="Submit2"
+          class="montserrat"
+          value="SUBMIT"
+        />
+      </div>
+    </div>
+    <div id="Footer">
+      <div id="Footer-NameCompany">
+        <h5>MY COMPANY</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+          dignissimos assumenda, quas provident, magnam quae eos corporis at,
+          qui ad modi quod architecto est impedit dolores temporibus sunt
+          aspernatur non?
+        </p>
+      </div>
+      <div id="Footer-Contact">
+        <h5>CONTACT</h5>
+        <div id="Home">
+          <img src="../public/assets/icons/Home_Icon.svg" />
+          <p>Somewhere, Earth</p>
+        </div>
+        <div id="Mail">
+          <img src="../public/assets/icons/Mail_Icon.svg" />
+          <p>dayla1emailhay@gmail.com</p>
+        </div>
+        <div id="Phone">
+          <img src="../public/assets/icons/Phone_Icon.svg" />
+          <p>+08 6262 8386</p>
+        </div>
+      </div>
+      <div id="Footer-Social">
+        <h5>Get connected with us on social networks!</h5>
+        <a href="#Footer-Social"
+          ><img src="../public/assets/icons/FaceBook_Icon.svg" alt=""
+        /></a>
+        <a href="#Footer-Social"
+          ><img src="../public/assets/icons/Twitter_Icon.svg" alt=""
+        /></a>
+        <a href="#Footer-Social"
+          ><img src="../public/assets/icons/Google_Icon.svg" alt=""
+        /></a>
+        <a href="#Footer-Social"
+          ><img src="../public/assets/icons/Instagram_Icon.svg" alt=""
+        /></a>
+        <a href="#Footer-Social"
+          ><img src="../public/assets/icons/Pinterest_Icon.svg" alt=""
+        /></a>
+      </div>
+    </div>
     <script src="../script.js"></script>
-</body>
+  </body>
 </html>

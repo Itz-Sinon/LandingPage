@@ -1,3 +1,399 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 body {
-    background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: #333333;
+  font-size: 20px;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+h1 {
+  font-size: 60px;
+}
+h2,
+p {
+  font-size: 20px;
+}
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+#NavBar {
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 3% 20% 1fr 23%;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  border-bottom: solid gray 1px;
+  z-index: 1;
+}
+#Logo {
+  grid-area: 1/2/1/3;
+  height: 60px;
+}
+#NavBar #MenuBtn {
+  display: none;
+}
+#Links {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#NavBar a {
+  display: inline-block;
+  color: black;
+  margin: 0 30px;
+  text-decoration: none;
+}
+#NavBar a:hover {
+  color: #ae9580;
+  cursor: pointer;
+}
+#Logo-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Logo-Name {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 60px;
+}
+#Logo img {
+  width: 55px;
+  height: 50px;
+}
+
+#To_Top {
+  position: fixed;
+  right: 5px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #1f4947;
+  border: 2px solid white;
+  border-radius: 50%;
+  z-index: 2;
+}
+#To_Top:hover {
+  background-color: #055f5a;
+}
+
+#Page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f4947;
+  width: 100%;
+  height: 600px;
+}
+#Page1-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+#Page1-Content h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#Page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 950px;
+}
+#Page2-Box {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  height: 100%;
+  max-width: 90%;
+  background-color: #f2f2f2;
+  margin-top: -5%;
+}
+.Title-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #fb8705;
+  height: 50px;
+}
+#Page2-Box-Content {
+  grid-area: 1/1/2/2;
+  padding: 40px;
+}
+#Page2-Box-Content h2 {
+  width: 35%;
+}
+#Page2-Box-Content h1 {
+  margin: 30px 0 0 0;
+}
+#Page2-Box-Content p {
+  margin: 30px 0 50px 0;
+}
+
+#Page2-Box-Content-Btn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+#Page2-Box-Content-Btn a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 2%;
+  height: 2em;
+  width: 40%;
+  text-decoration: none;
+}
+#Page2-Box-Content-Btn a:hover {
+  color: #b6b5b5;
+}
+.Active-Btn {
+  background-color: black;
+  color: white !important;
+}
+#Page2-Box-Img {
+  height: 950px;
+}
+#Page2-Box-Img img {
+  width: 100%;
+  height: 100%;
+}
+
+#Page3 {
+  display: grid;
+  grid-template: 35% 65% / repeat(4, 25%);
+  background-color: #f2f2f2;
+  color: black;
+  padding: 5%;
+  max-width: 90%;
+  height: 500px;
+}
+#Page3 p {
+  color: #b6b5b5;
+}
+#Page3-Content-Up {
+  grid-area: 1/1/2/5;
+}
+#Page3-Content-Up h2 {
+  width: 20%;
+  margin-top: 0px;
+}
+#Page3-Content-Up h1 {
+  margin-top: -10px;
+}
+#Page3-Content-Down-Analysis {
+  grid-area: 2/1/3/2;
+  padding: 5%;
+}
+#Page3-Content-Down-Strategy {
+  grid-area: 2/2/3/3;
+  padding: 5%;
+}
+#Page3-Content-Down-Optimization {
+  grid-area: 2/3/3/4;
+  padding: 5%;
+}
+#Page3-Content-Down-Training {
+  grid-area: 2/4/3/5;
+  padding: 5%;
+}
+.Box-Img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin: 40px 0;
+  padding: 10px;
+}
+.Box-Img img {
+  width: 100%;
+  height: 100%;
+}
+
+#Page4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 700px;
+  background-color: white;
+  color: black;
+}
+#Page4-Img {
+  padding-top: 60px;
+  position: relative;
+}
+#Page4-Img img {
+  width: 90%;
+  height: 600px;
+  position: absolute;
+  right: 0;
+}
+#Page4-Content {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 10px 30px 30px;
+}
+#Page4-Content h2 {
+  padding: 12px 16px;
+  width: 150px;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+#InputName,
+#InputEmail,
+#InputMes {
+  border: 2px solid gray;
+  border-radius: 12px;
+  max-width: 70%;
+  max-height: 100px;
+}
+#InputName,
+#InputEmail {
+  font-size: 16px;
+  width: 80%;
+  padding: 10px 0 10px 20px;
+  margin: 10px 0;
+}
+#InputMes {
+  font-size: 16px;
+  padding: 10px 0 10px 20px;
+  margin: 10px 0;
+}
+#InputName:focus,
+#InputEmail:focus,
+#InputMes:focus {
+  border-color: #fb8705;
+}
+#Submit2 {
+  height: 10%;
+  width: 120px;
+  margin: 20px 0;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+#Submit2:hover {
+  cursor: pointer;
+  background-color: #fb8705;
+  transform: scale(1.05, 1.05);
+}
+
+#Footer {
+  display: grid;
+  grid-template: 100% / 1fr 25% 30% 30% 1fr;
+  height: 200px;
+  background-color: #333333;
+  color: white;
+}
+#Footer p {
+  font-size: 12px;
+}
+#Footer img {
+  width: 24px;
+  height: 24px;
+}
+#Footer-NameCompany {
+  grid-area: 1/2/1/3;
+}
+#Footer-NameCompany p {
+  width: 80%;
+}
+#Footer-Contact {
+  grid-area: 1/3/1/4;
+  padding: 0 10%;
+}
+#Home,
+#Mail,
+#Phone {
+  display: flex;
+  align-items: center;
+}
+#Footer-Contact p {
+  display: inline;
+  margin-left: 3%;
+}
+#Footer-Social {
+  grid-area: 1/4/1/5;
+  text-align: center;
+}
+#Footer-Social a {
+  margin: 0 3%;
+}
+
+@media (max-width: 770px) {
+  #NavBar {
+    grid-template: 55px 1fr / 50% 1fr 20%;
+    height: 100%;
+    position: relative;
+  }
+  #NavBar #Logo {
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  #NavBar a {
+    margin: 5px 0;
+    width: 100%;
+  }
+  #NavBar #Links {
+    grid-area: 2/1/3/4;
+    height: 60%;
+    width: 100%;
+    flex-flow: column;
+    display: none;
+    text-align: center;
+    border-top: solid gray 1px;
+    padding: auto;
+  }
+
+  #NavBar #MenuBtn {
+    grid-area: 1/3/1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 40%;
+
+    img {
+      height: 40px;
+    }
+  }
+  #To_Top {
+    right: 5%;
+    bottom: 5%;
+    height: 25px;
+    width: 25px;
+  }
 }
