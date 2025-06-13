@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   color: white;
-  background-color: violet;
+  background-color: #333333;
   font-size: 20px;
   margin: 0;
   overflow-x: hidden;
@@ -92,4 +92,110 @@ img {
 }
 #To_Top:hover {
   background-color: #055f5a;
+}
+
+#Page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f4947;
+  width: 100%;
+  height: 600px;
+}
+#Page1-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+#Page1-Content h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#Page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  padding: 5% 0;
+}
+.Box-Price {
+  width: 25%;
+  padding:2%;
+  margin: 0 2%;
+  background-color: #f2f2f2;
+  color: black;
+}
+.Box-Price h1 {
+  color: #fb8705;
+}
+.Box-Price h2 {
+  font-size: 30px;
+  margin-top: -40px;
+}
+.Box-Price ul {
+  padding-left: 20px;
+  text-indent: 10px;
+}
+.Box-Price li {
+  margin: 10px 0;
+}
+.Box-Price a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  height: 50px;
+  width: 50%;
+}
+.Box-Price a:hover {
+  background-color: #fb8705;
+}
+
+#Footer {
+  display: grid;
+  grid-template: 100% / 1fr 25% 30% 30% 1fr;
+  height: 200px;
+  background-color: #333333;
+  color: white;
+}
+#Footer p {
+  font-size: 12px;
+}
+#Footer img {
+  width: 24px;
+  height: 24px;
+}
+#Footer-NameCompany {
+  grid-area: 1/2/1/3;
+}
+#Footer-NameCompany p {
+  width: 80%;
+}
+#Footer-Contact {
+  grid-area: 1/3/1/4;
+  padding: 0 10%;
+}
+#Home,
+#Mail,
+#Phone {
+  display: flex;
+  align-items: center;
+}
+#Footer-Contact p {
+  display: inline;
+  margin-left: 3%;
+}
+#Footer-Social {
+  grid-area: 1/4/1/5;
+  text-align: center;
+}
+#Footer-Social a {
+  margin: 0 3%;
 }
