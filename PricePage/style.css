@@ -124,7 +124,7 @@ img {
 }
 .Box-Price {
   width: 25%;
-  padding:2%;
+  padding: 2%;
   margin: 0 2%;
   background-color: #f2f2f2;
   color: black;
@@ -198,4 +198,92 @@ img {
 }
 #Footer-Social a {
   margin: 0 3%;
+}
+
+@media (max-width: 770px) {
+  #NavBar {
+    grid-template: 55px 1fr / 50% 1fr 20%;
+    height: 100%;
+    position: relative;
+  }
+  #NavBar #Logo {
+    grid-area: 1/1/2/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+  }
+  #NavBar a {
+    margin: 5px 0;
+    width: 100%;
+  }
+  #NavBar #Links {
+    grid-area: 2/1/3/4;
+    height: 60%;
+    width: 100%;
+    flex-flow: column;
+    display: none;
+    text-align: center;
+    border-top: solid gray 1px;
+    padding: auto;
+  }
+
+  #NavBar #MenuBtn {
+    grid-area: 1/3/1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 40%;
+
+    img {
+      height: 40px;
+    }
+  }
+  #To_Top {
+    right: 5%;
+    bottom: 5%;
+    height: 25px;
+    width: 25px;
+  }
+
+  #Page1-Content {
+    width: 90%;
+  }
+  #Page1 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  #Page1 h2,
+  #Page1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Page2 {
+    flex-direction: column;
+  }
+  .Box-Price {
+    width: 90%;
+    margin: 5% 0;
+  }
+
+  #Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 100%;
+  }
+  #Footer-NameCompany,
+  #Footer-Contact,
+  #Footer-Social {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
 }
