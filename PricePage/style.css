@@ -156,6 +156,7 @@ img {
 }
 .Box-Price a:hover {
   background-color: #fb8705;
+  transform: scale(1.05);
 }
 
 #Footer {
@@ -242,10 +243,10 @@ img {
     }
   }
   #To_Top {
-    right: 5%;
-    bottom: 5%;
-    height: 25px;
-    width: 25px;
+    right: 2%;
+    bottom: 2%;
+    height: 2em;
+    width: 2em;
   }
 
   #Page1-Content {
