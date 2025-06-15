@@ -7,8 +7,9 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  background-color: #333333;
+  background-color: #f2f2f2;
   font-size: 20px;
   margin: 0;
   overflow-x: hidden;
@@ -23,12 +24,22 @@ img {
   object-position: center;
 }
 
+#Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  border: solid gray 1px;
+}
+
 #NavBar {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 3% 20% 1fr 23%;
   position: sticky;
   top: 0;
+  width: 100%;
   height: 60px;
   border-bottom: solid gray 1px;
   z-index: 1;
@@ -94,6 +105,7 @@ img {
   display: grid;
   grid-template-columns: 50% 1fr;
   background-color: #f2f2f2;
+  width: 100%;
   height: 600px;
 }
 #Page1-Content {
@@ -142,6 +154,7 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #fb8705;
+  width: 100%;
   height: 100%;
 }
 #Page2-Content {
@@ -187,6 +200,7 @@ img {
 #Page3 {
   display: grid;
   grid-template: 50% 50%/ 50% 50%;
+  width: 100%;
   height: 570px;
   background-color: #1f4947;
   color: white;
@@ -278,6 +292,7 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: white;
+  width: 100%;
   height: 650px;
 }
 #Page4-Content,
@@ -351,6 +366,7 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #f2f2f2;
+  width: 100%;
   height: 650px;
 }
 #Page5-Img img {
@@ -366,6 +382,7 @@ img {
   grid-template: 250px 1fr/ 50% 50%;
   background-color: #1f4947;
   color: white;
+  width: 100%;
   height: 900px;
 }
 #Page7-Content-Left {
@@ -431,6 +448,7 @@ img {
 #Page8 {
   display: grid;
   grid-template-columns: 50% 50%;
+  width: 100%;
   height: 700px;
   background-color: white;
 }
@@ -500,6 +518,7 @@ textarea:focus {
 #Footer {
   display: grid;
   grid-template: 100% / 1fr 25% 30% 30% 1fr;
+  width: 100%;
   height: 200px;
   background-color: #333333;
   color: white;
@@ -540,6 +559,10 @@ textarea:focus {
 }
 /* Responsive */
 @media (max-width: 770px) {
+  #Container {
+    max-width: 770px;
+    height: 100%;
+  }
   #NavBar {
     grid-template: 55px 1fr / 50% 1fr 20%;
     height: 100%;
@@ -854,7 +877,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: 600px;
     width: 100%;
   }
   #Footer-NameCompany,

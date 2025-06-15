@@ -7,9 +7,10 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   color: white;
-  background-color: #333333;
+  background-color: #f2f2f2;
   font-size: 20px;
   margin: 0;
   overflow-x: hidden;
@@ -27,12 +28,22 @@ img {
   object-position: center;
 }
 
+#Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  border: solid gray 1px;
+}
+
 #NavBar {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 3% 20% 1fr 23%;
   position: sticky;
   top: 0;
+  width: 100%;
   height: 60px;
   border-bottom: solid gray 1px;
   z-index: 1;
@@ -202,6 +213,10 @@ img {
 }
 
 @media (max-width: 770px) {
+  #Container {
+    max-width: 770px;
+    height: 100%;
+  }
   #NavBar {
     grid-template: 55px 1fr / 50% 1fr 20%;
     height: 100%;
@@ -277,7 +292,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: 600px;
     width: 100%;
   }
   #Footer-NameCompany,
