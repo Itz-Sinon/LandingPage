@@ -11,6 +11,7 @@ body {
   justify-content: center;
   background-color: #f2f2f2;
   font-size: 20px;
+  width: 100%;
   margin: 0;
   overflow-x: hidden;
   position: relative;
@@ -24,23 +25,21 @@ img {
   object-position: center;
 }
 
-#Container {
+#NavBar {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
 }
-
-#NavBar {
+#NavBar-Container {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 3% 20% 1fr 23%;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 2000px;
   height: 60px;
-  border-bottom: solid gray 1px;
   z-index: 1;
 }
 #Logo {
@@ -100,11 +99,19 @@ img {
   background-color: #055f5a;
 }
 
+
 #Page1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+#Page1-Container {
   display: grid;
   grid-template-columns: 50% 1fr;
   background-color: #f2f2f2;
-  width: 100%;
+  width: 2000px;
   height: 600px;
 }
 #Page1-Content {
@@ -150,10 +157,17 @@ img {
 }
 
 #Page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fb8705;
+}
+#Page2-Container {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #fb8705;
-  width: 100%;
+  width: 2000px;
   height: 100%;
 }
 #Page2-Content {
@@ -197,9 +211,16 @@ img {
 }
 
 #Page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1f4947;
+}
+#Page3-Container {
   display: grid;
   grid-template: 50% 50%/ 50% 50%;
-  width: 100%;
+  width: 2000px;
   height: 570px;
   background-color: #1f4947;
   color: white;
@@ -287,11 +308,20 @@ img {
 }
 
 #Page4,
+#Page5,
 #Page6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+#Page4-Container,
+#Page6-Container {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: white;
-  width: 100%;
+  width: 2000px;
   height: 650px;
 }
 #Page4-Content,
@@ -362,10 +392,13 @@ img {
 }
 
 #Page5 {
+  background-color: #f2f2f2;
+}
+#Page5-Container {
   display: grid;
   grid-template-columns: 50% 50%;
   background-color: #f2f2f2;
-  width: 100%;
+  width: 2000px;
   height: 650px;
 }
 #Page5-Img img {
@@ -377,11 +410,18 @@ img {
 }
 
 #Page7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #1f4947;
+}
+#Page7-Container {
   display: grid;
   grid-template: 250px 1fr/ 50% 50%;
   background-color: #1f4947;
   color: white;
-  width: 100%;
+  width: 2000px;
   height: 900px;
 }
 #Page7-Content-Left {
@@ -444,10 +484,18 @@ img {
   flex-direction: column;
 }
 
+
 #Page8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+#Page8-Container {
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 100%;
+  width: 2000px;
   height: 700px;
   background-color: white;
 }
@@ -515,9 +563,16 @@ textarea:focus {
 }
 
 #Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #333333;
+}
+#Footer-Container {
   display: grid;
   grid-template: 100% / 1fr 25% 30% 30% 1fr;
-  width: 100%;
+  width: 2000px;
   height: 200px;
   background-color: #333333;
   color: white;
@@ -558,12 +613,9 @@ textarea:focus {
 }
 /* Responsive */
 @media (max-width: 770px) {
-  #Container {
-    max-width: 770px;
-    height: 100%;
-  }
-  #NavBar {
+  #NavBar-Container {
     grid-template: 55px 1fr / 50% 1fr 20%;
+    width: 100%;
     height: 100%;
     position: relative;
   }
@@ -609,7 +661,7 @@ textarea:focus {
     width: 2em;
   }
 
-  #Page1 {
+  #Page1-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -653,7 +705,7 @@ textarea:focus {
     object-position: top center;
   }
 
-  #Page2 {
+  #Page2-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -686,7 +738,7 @@ textarea:focus {
     padding: 0;
   }
 
-  #Page3 {
+  #Page3-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -739,16 +791,16 @@ textarea:focus {
     margin-bottom: 20px;
   }
 
-  #Page4,
-  #Page5,
-  #Page6 {
+  #Page4-Container,
+  #Page5-Container,
+  #Page6-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 1000px;
   }
-  #Page5 {
+  #Page5-Container {
     flex-direction: column-reverse;
   }
   #Page4-Content,
@@ -790,7 +842,7 @@ textarea:focus {
     width: 80%;
   }
 
-  #Page7 {
+  #Page7-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -833,7 +885,7 @@ textarea:focus {
     margin: 10px 0;
   }
 
-  #Page8 {
+  #Page8-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -872,7 +924,7 @@ textarea:focus {
     max-height: 100px;
   }
 
-  #Footer {
+  #Footer-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
