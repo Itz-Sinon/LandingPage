@@ -29,8 +29,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
-  border: solid gray 1px;
+  max-width: 100%;
 }
 
 #NavBar {
