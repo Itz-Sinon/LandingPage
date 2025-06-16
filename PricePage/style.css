@@ -28,23 +28,21 @@ img {
   object-position: center;
 }
 
-#Container {
+#NavBar {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
+  width: 100%;
+  background-color: white;
 }
-
-#NavBar {
+#NavBar-Container {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 3% 20% 1fr 23%;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 2000px;
   height: 60px;
-  border-bottom: solid gray 1px;
   z-index: 1;
 }
 #Logo {
@@ -108,8 +106,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1f4947;
   width: 100%;
+  background-color: #1f4947;
+}
+#Page1-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f4947;
+  width: 2000px;
   height: 600px;
 }
 #Page1-Content {
@@ -123,13 +128,19 @@ img {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
 #Page2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   width: 100%;
+  background-color: white;
+}
+#Page2-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 2000px;
   padding: 5% 0;
 }
 .Box-Price {
@@ -170,8 +181,16 @@ img {
 }
 
 #Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #333333;
+}
+#Footer-Container {
   display: grid;
   grid-template: 100% / 1fr 25% 30% 30% 1fr;
+  width: 2000px;
   height: 200px;
   background-color: #333333;
   color: white;

@@ -28,23 +28,21 @@ img {
   object-position: center;
 }
 
-#Container {
+#NavBar {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
 }
-
-#NavBar {
+#NavBar-Container {
   background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 3% 20% 1fr 23%;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 2000px;
   height: 60px;
-  border-bottom: solid gray 1px;
   z-index: 1;
 }
 #Logo {
@@ -108,9 +106,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background-color: #1f4947;
+}
+#Page1-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #1f4947;
   color: white;
-  width: 100%;
+  width: 2000px;
   height: 600px;
 }
 #Page1-Content {
@@ -133,12 +138,20 @@ img {
   background-color: #fb8705;
   height: 50px;
 }
+
 #Page2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   width: 100%;
+  background-color: white;
+}
+#Page2-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 2000px;
   height: 800px;
 }
 #Page2-Box {
@@ -213,12 +226,19 @@ textarea:focus {
 }
 
 #Page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+#Page3-Container {
   display: grid;
   grid-template: 35% 65% / 1fr 1fr 1fr;
   background-color: #f2f2f2;
   color: black;
   padding: 5%;
-  max-width: 90%;
+  width: 2000px;
   height: 500px;
 }
 #Page3-Content {
@@ -252,8 +272,16 @@ textarea:focus {
 }
 
 #Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #333333;
+}
+#Footer-Container {
   display: grid;
   grid-template: 100% / 1fr 25% 30% 30% 1fr;
+  width: 2000px;
   height: 200px;
   background-color: #333333;
   color: white;
