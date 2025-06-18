@@ -322,11 +322,7 @@ textarea:focus {
 }
 
 @media (max-width: 770px) {
-  #Container {
-    max-width: 770px;
-    height: 100%;
-  }
-  #NavBar {
+  #NavBar-Container {
     grid-template: 55px 1fr / 50% 1fr 20%;
     height: 100%;
     position: relative;
@@ -389,7 +385,7 @@ textarea:focus {
     align-items: center;
   }
 
-  #Page2 {
+  #Page2-Container {
     height: 1300px;
   }
   #Page2-Box {
@@ -431,7 +427,7 @@ textarea:focus {
     max-height: 100px;
   }
 
-  #Page3 {
+  #Page3-Container {
     display: grid;
     grid-template: 10% repeat(3, 1fr) / 100%;
     height: 1000px;
@@ -449,7 +445,7 @@ textarea:focus {
   #Page3-Content-Down-Call {
     grid-area: 2/1/3/2;
   }
-  #Footer {
+  #Footer-Container {
     display: flex;
     flex-direction: column;
     align-items: center;

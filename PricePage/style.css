@@ -231,11 +231,7 @@ img {
 }
 
 @media (max-width: 770px) {
-  #Container {
-    max-width: 770px;
-    height: 100%;
-  }
-  #NavBar {
+  #NavBar-Container {
     grid-template: 55px 1fr / 50% 1fr 20%;
     height: 100%;
     position: relative;
@@ -298,7 +294,7 @@ img {
     align-items: center;
   }
 
-  #Page2 {
+  #Page2-Container {
     flex-direction: column;
   }
   .Box-Price {
@@ -306,7 +302,7 @@ img {
     margin: 5% 0;
   }
 
-  #Footer {
+  #Footer-Container {
     display: flex;
     flex-direction: column;
     align-items: center;
