@@ -27,6 +27,50 @@ img {
   object-position: center;
 }
 
+#Pop-Up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.185);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+#Pop-Up-Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+#Pop-Up-Content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fb8705;
+  color: white;
+  text-decoration: none;
+  height: 20%;
+  width: 50%;
+  border-radius: 12px;
+  margin-top: 5%;
+}
+#Pop-Up-Content h2 {
+  font-size: 40px;
+}
+.Open {
+  opacity: 1 !important;
+  z-index: 99 !important;
+}
+
 #NavBar {
   display: flex;
   justify-content: center;
@@ -90,15 +134,16 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #1f4947;
-  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid none;
   border-radius: 50%;
+  box-shadow: 0 5px 20px black;
   z-index: 2;
 }
 #To_Top:hover {
-  background-color: #055f5a;
+  background-color: #f2f2f2;
 }
 
 #Page1 {
@@ -193,9 +238,15 @@ img {
 #Page2-Box-Content-Btn a:hover {
   color: #b6b5b5;
 }
-.Active-Btn {
+.ActiveBtn {
   background-color: black;
   color: white !important;
+}
+.Box-Tab {
+  display: none;
+}
+.Active-Box {
+  display: block;
 }
 #Page2-Box-Img {
   height: 950px;

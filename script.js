@@ -81,3 +81,31 @@ function handleResize() {
   }
 }
 window.addEventListener("resize", handleResize);
+
+const tabs = document.querySelectorAll(".Tabs");
+const BoxTabs = document.querySelectorAll(".Box-Tab");
+
+tabs.forEach( (tab, index) => {
+  tab.addEventListener("click" , (e) => {
+    tabs.forEach(tab => {tab.classList.remove("ActiveBtn", "showLeft")});
+    tab.classList.add("ActiveBtn");
+
+    BoxTabs.forEach(box => {box.classList.remove("Active-Box")});
+    BoxTabs[index].classList.add("Active-Box", "showLeft");
+  })
+})
+
+const openPopUp = document.querySelectorAll(".OpenPopUp");
+const closePopUp = document.querySelectorAll(".ClosePopUp");
+const popUp = document.getElementById("Pop-Up");
+
+openPopUp.forEach(btn => {
+  btn.addEventListener("click", () => {
+    popUp.classList.add("Open");
+  });
+});
+closePopUp.forEach(btn => {
+  btn.addEventListener("click", () => {
+    popUp.classList.remove("Open");
+  });
+});

@@ -11,6 +11,13 @@
     <title>Wazzup</title>
   </head>
   <body class="montserrat">
+    <div id="Pop-Up" >
+      <div id="Pop-Up-Content">
+        <h2>There's nothing here </h2>
+        <p>Go back to the website</p>
+        <a href="javascript:void(0);" class="ClosePopUp">Close</a>
+      </div>
+    </div>
     <div id="NavBar">
       <div id="NavBar-Container">
         <a href="#" id="Logo">
@@ -35,7 +42,7 @@
     </div>
     <div id="To_Top">
       <a href="#">
-        <img src="./public/assets/icons/ArrowUp.svg" />
+        <img src="./public/assets/icons/ArrowUp_Black_Icon.svg" />
       </a>
     </div>
     <div id="Page1">
@@ -48,7 +55,7 @@
             kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
             amet
           </p>
-          <a href="javascript:void(0);">FREE CONSULTATION</a>
+          <a href="javascript:void(0);" class="OpenPopUp">FREE CONSULTATION</a>
         </div>
         <div id="Page1-Img">
           <img src="./public/assets/images/Img_Page1.png" />
@@ -67,7 +74,7 @@
             class="email montserrat"
             required
           />
-          <input type="submit" id="submit" class="montserrat" value="SUBMIT" />
+          <input type="submit" id="submit" class="montserrat OpenPopUp" value="SUBMIT" />
         </div>
       </div>
     </div>
@@ -79,18 +86,35 @@
         </div>
         <div id="Page3-Btn">
           <div id="Page3-Btn-BtnPlace">
-            <a href="javascript:void(0);" class="ActiveBtn" onclick=""
-              >STRATEGY</a
-            >
-            <a href="javascript:void(0);">OPERATIONS</a>
-            <a href="javascript:void(0);">FINANCE</a>
+            <a href="javascript:void(0);" class="Tabs ActiveBtn">STRATEGY</a>
+            <a href="javascript:void(0);" class="Tabs">OPERATIONS</a>
+            <a href="javascript:void(0);" class="Tabs">FINANCE</a>
           </div>
-          <div id="Page3-Btn-Content" class="hiddenDown">
-            <p>
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
-              dolor sit amet.
-            </p>
+          <div id="Page3-Btn-Content">
+            <div class="Box-Tab Active-Box showLeft">
+              <h2>STRATEGY</h2>
+              <p>
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                dolor sit amet.
+              </p>
+            </div>
+            <div class="Box-Tab">
+              <h2>OPERATIONS</h2>
+              <p>
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                dolor sit amet.
+              </p>
+            </div>
+            <div class="Box-Tab">
+              <h2>FINANCE</h2>
+              <p>
+                At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+                dolor sit amet.
+              </p>
+            </div>
           </div>
         </div>
         <div id="Page3-Statistic">
@@ -127,7 +151,7 @@
             <li>No sea takimata sanctus est</li>
             <li>Lorem ipsum dolor sit amet</li>
           </ul>
-          <a href="javascript:void(0);">READ MORE</a>
+          <a href="javascript:void(0);" class="OpenPopUp">READ MORE</a>
         </div>
         <div id="Page4-Img">
           <img src="./public/assets/images/Img_Page4.png" alt="" />
@@ -147,7 +171,7 @@
             <li>No sea takimata sanctus est</li>
             <li>Lorem ipsum dolor sit amet</li>
           </ul>
-          <a href="javascript:void(0);">READ MORE</a>
+          <a href="javascript:void(0);" class="OpenPopUp">READ MORE</a>
         </div>
       </div>
     </div>
@@ -161,7 +185,7 @@
             <li>No sea takimata sanctus est</li>
             <li>Lorem ipsum dolor sit amet</li>
           </ul>
-          <a href="javascript:void(0);">READ MORE</a>
+          <a href="javascript:void(0);" class="OpenPopUp">READ MORE</a>
         </div>
         <div id="Page6-Img">
           <img src="./public/assets/images/Img_Page6.png" alt="" />
@@ -286,7 +310,7 @@
             type="submit"
             name="Submit2"
             id="Submit2"
-            class="montserrat"
+            class="montserrat OpenPopUp"
             value="SUBMIT"
           />
         </div>

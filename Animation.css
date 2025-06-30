@@ -70,17 +70,17 @@
   opacity: 0;
 }
 .showUp {
-  animation: bottom_to_top 1s 0.5s forwards ease-in-out;
+  animation: bottom_to_top 1s forwards ease-in-out;
 }
 .showDown {
-  animation: top_to_bottom 1s 0.5s forwards ease-in-out;
+  animation: top_to_bottom 1s forwards ease-in-out;
 }
 .showLeft {
-  animation: left_to_right 1s 0.8s forwards ease-in-out;
+  animation: left_to_right 1s forwards ease-in-out;
 }
 .showRight {
-  animation: right_to_left 1s 0.8s forwards ease-in-out;
+  animation: right_to_left 1s forwards ease-in-out;
 }
 .showFade {
-  animation: fade 1s 0.5s forwards ease-out;
+  animation: fade 1s forwards ease-out;
 }
