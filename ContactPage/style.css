@@ -65,6 +65,8 @@ img {
   margin-top: 5%;
 }
 #Pop-Up-Content h2 {
+  width: 90%;
+  text-align: center;
   font-size: 40px;
 }
 .Open {
